@@ -215,6 +215,7 @@ class MenuButton extends PanelMenu.Button {
 			y_align: Clutter.ActorAlign.CENTER,
 			reactive: true
 		});
+		this.add_style_class_name('fildem-menu-entry')
 		this.box.add_child(this.labelWidget);
 		this.add_child(this.box);
 		this.connect('button-release-event', this.onButtonEvent.bind(this));
